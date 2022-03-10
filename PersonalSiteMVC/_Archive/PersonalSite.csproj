@@ -1,0 +1,221 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C25C0A9-FAFB-4FB2-B34E-F2A9E796E44D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonalSite</RootNamespace>
+    <AssemblyName>PersonalSite</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\img\header.jpg" />
+    <Content Include="assets\img\projects\fed1.jpg" />
+    <Content Include="assets\teamImg\Austin.jpg" />
+    <Content Include="assets\teamImg\Conor.jpg" />
+    <Content Include="assets\teamImg\Enrique.jpg" />
+    <Content Include="assets\teamImg\Ian.jpg" />
+    <Content Include="assets\teamImg\Jazmine.jpg" />
+    <Content Include="assets\teamImg\Justin.jpg" />
+    <Content Include="assets\teamImg\Kayla.jpg" />
+    <Content Include="assets\teamImg\Matt.jpg" />
+    <Content Include="assets\teamImg\Michael.jpg" />
+    <Content Include="assets\teamImg\Payton.jpg" />
+    <Content Include="assets\teamImg\Romeo.jpg" />
+    <Content Include="assets\teamImg\Sean.jpg" />
+    <Content Include="assets\teamImg\Zak.jpg" />
+    <Content Include="teamPage2.html" />
+    <Content Include="teamPage1.html" />
+    <Content Include="projects.html" />
+    <Content Include="Web.config" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\lightbox.css" />
+    <Content Include="assets\css\menu.css" />
+    <Content Include="assets\css\owl.carousel.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\themify-icons.css" />
+    <Content Include="assets\css\video.min.css" />
+    <Content Include="assets\fonts\themify.svg" />
+    <Content Include="assets\img\about\about-1.jpg" />
+    <Content Include="assets\img\banner\banner-1.jpg" />
+    <Content Include="assets\img\banner\news-banner.jpg" />
+    <Content Include="assets\img\blog\blog-1.jpg" />
+    <Content Include="assets\img\blog\blog-2.jpg" />
+    <Content Include="assets\img\blog\blog-3.jpg" />
+    <Content Include="assets\img\blog\blog-4.jpg" />
+    <Content Include="assets\img\blog\blog-5.jpg" />
+    <Content Include="assets\img\blog\blog-6.jpg" />
+    <Content Include="assets\img\blog\blog-7.jpg" />
+    <Content Include="assets\img\blog\blog-item-1.jpg" />
+    <Content Include="assets\img\blog\blog-item-2.jpg" />
+    <Content Include="assets\img\blog\blog-item-3.jpg" />
+    <Content Include="assets\img\blog\blog-item-4.jpg" />
+    <Content Include="assets\img\blog\blog-s.jpg" />
+    <Content Include="assets\img\blog\img1.png" />
+    <Content Include="assets\img\blog\img2.png" />
+    <Content Include="assets\img\blog\img4.png" />
+    <Content Include="assets\img\close.png" />
+    <Content Include="assets\img\loading.gif" />
+    <Content Include="assets\img\logo\logo.png" />
+    <Content Include="assets\img\next.png" />
+    <Content Include="assets\img\portfolio\port-1.jpg" />
+    <Content Include="assets\img\portfolio\port-10.gif" />
+    <Content Include="assets\img\portfolio\port-10.jpg" />
+    <Content Include="assets\img\portfolio\port-11.gif" />
+    <Content Include="assets\img\portfolio\port-11.jpg" />
+    <Content Include="assets\img\portfolio\port-12.jpg" />
+    <Content Include="assets\img\portfolio\port-13.jpg" />
+    <Content Include="assets\img\portfolio\port-2.jpg" />
+    <Content Include="assets\img\portfolio\port-3.jpg" />
+    <Content Include="assets\img\portfolio\port-4.jpg" />
+    <Content Include="assets\img\portfolio\port-5.jpg" />
+    <Content Include="assets\img\portfolio\port-6.jpg" />
+    <Content Include="assets\img\portfolio\port-7.jpg" />
+    <Content Include="assets\img\portfolio\port-8.jpg" />
+    <Content Include="assets\img\portfolio\port-9.jpg" />
+    <Content Include="assets\img\portfolio\port-s-1.jpg" />
+    <Content Include="assets\img\portfolio\port-s-2.jpg" />
+    <Content Include="assets\img\portfolio\port-s.jpg" />
+    <Content Include="assets\img\preloader.gif" />
+    <Content Include="assets\img\prev.png" />
+    <Content Include="assets\img\recent-blog\recent-1.jpg" />
+    <Content Include="assets\img\recent-blog\recent-2.jpg" />
+    <Content Include="assets\img\recent-blog\recent-3.jpg" />
+    <Content Include="assets\img\recent-blog\recent-4.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\circle-effect.js" />
+    <Content Include="assets\js\gmap3.min.js" />
+    <Content Include="assets\js\imagesloaded.pkgd.min.js" />
+    <Content Include="assets\js\jquery-2.1.4.min.js" />
+    <Content Include="assets\js\jquery.counterup.min.js" />
+    <Content Include="assets\js\jquery.isotope.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\lightbox.js" />
+    <Content Include="assets\js\masonry-docs.min.js" />
+    <Content Include="assets\js\masonry.pkgd.min.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="assets\js\wow.min.js" />
+    <Content Include="blog-single.html" />
+    <Content Include="blog.html" />
+    <Content Include="contact.html" />
+    <Content Include="index.html" />
+    <Content Include="loading.gif" />
+    <Content Include="prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="resume.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="assets\fonts\themify.eot" />
+    <Content Include="assets\fonts\themify.ttf" />
+    <Content Include="assets\fonts\themify.woff" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61536</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61536/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

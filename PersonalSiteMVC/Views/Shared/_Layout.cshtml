@@ -1,42 +1,176 @@
 ﻿<!DOCTYPE html>
-<html>
+
+<html lang="zxx">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8">
+    <title>Alex Klee</title>
+    <meta name="description" content="Personal Site">
+
+    <meta name="keywords" content="Premium HTML Template">
+
+    <meta name="author" content="HTMLmate Alex Klee">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css-include -->
+    <!-- boorstrap -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/bootstrap.min.css">
+    <!-- themify-icon.css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/themify-icons.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/owl.carousel.css">
+    <!-- light-box -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/lightbox.css">
+    <!-- video css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/video.min.css">
+    <!-- menu.css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/menu.css">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/style.css">
+    <!-- responsive.css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/css/responsive.css">
 </head>
+
+\]
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    <div id="preloader"></div>
+    <!-- Start of nav bar
+        ============================================= -->
+    <nav id="poppin-nav">
+        <div id="nav-off"></div>
+        <div id="header-logo-1" class="text-center">
+            <a href="#"><img src="~/Content/assets/img//logo/logo.png" alt="img"></a>
+        </div>
+        <ul id="menu">
+            <li class="has-submenu text-capitalize">
+                <a href="@Url.Action("Index", "Home")">home</a>
+            </li>
+            <!--<li class="has-submenu">
+                <a href="#">Blog <span class="ti-angle-down"></span></a>
+                <ul class="submenu">
+                    <li><a href="blog.html">Blog Grid</a></li>
+                    <li><a href="blog-single.html">Single Post</a></li>
                 </ul>
+            </li>-->
+            <li><a href="@Url.Action("Project", "Home")">Projects</a></li>
+            <li><a href="@Url.Action("TeamPage1", "Home")">The Team</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="menu-overlay"></div>
+    <!-- End of nav bar
+        ============================================= -->
+    <!-- Start of header
+        ============================================= -->
+    <header id="site-header" class="not-stuck">
+        <div class="container">
+            <div class="row">
+                <div id="header-logo">
+                    <a href="#"><img src="~/Content/assets/img//logo/logo.png" alt="img"></a>
+                </div>
+
+                <div id="menu-burger" class="pull-right not-stuck">
+                    <div id="menu-bar">
+                        <span class="icon-bar top"></span>
+                        <span class="icon-bar middle"></span>
+                        <span class="icon-bar bottom"></span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    </header>
+    <!-- End of header
+        ============================================= -->
+    <!-- Start of page head section
+        ============================================= -->
+    <section id="page-head" class="page-head-section">
+        <div class="page-head-overlay"></div>
+        <div id="page-head-effect" class="page-head-effect">
+            <canvas id="demo-canvas"></canvas>
+        </div>
+        <!-- // page-head-style -->
+        <div class="container">
+            <div class="row">
+                <div class="banner-content">
+                    <div class="page-head-content">
+                        <div class="page-head-title text-capitalize pb40">
+                            <h1>Alex Klee</h1>
+                            <span class="descrip">Full Stack Web Dev</span>
+                        </div>
+                        <!-- //title -->
+
+                        <div class="page-head-social">
+                            <div class="social-title text-uppercase">
+                                <span>socials</span>
+                            </div>
+                            <!-- //title -->
+                            <div class="page-head-social-item ul-li">
+                                <ul class="page-head-social-list">
+                                    <li><a href="https://linkedin.com/in/alex-klee-6b962a232" target="_blank"><span class="ti-linkedin"></span></a></li>
+                                    <!--<li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                    <li><a href="#"><span class="ti-google"></span></a></li>-->
+                                    <li><a href="https://github.com/KleeAlex" target="_blank"><span class="ti-github"></span></a></li>
+                                </ul><!-- /.page-head-social-list -->
+                            </div><!-- /.page-head-social-item -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    @RenderBody()
+    <footer>
+        <div class="footer-area footer-2">
+            <div class="container">
+                <div class="row">
+                    <div class="copy-right-area text-center">
+                        <div class="page-head-social-item ul-li">
+                            <ul class="page-head-social-list">
+                                <li><a href="https://linkedin.com/in/alex-klee-6b962a232" target="_blank"><span class="ti-linkedin"></span></a></li>
+                                <!--<li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                <li><a href="#"><span class="ti-google"></span></a></li>-->
+                                <li><a href="https://github.com/KleeAlex" target="_blank"><span class="ti-github"></span></a></li>
+                            </ul><!-- /.page-head-social-list -->
+                        </div>
+                        <span>© puppin 2018 - Alex Klee @DateTime.Now.Year - All Rights Reserved </span>
+                    </div>
+                    <!-- //copy-right-area -->
+                </div><!--  /.container -->
+            </div><!--  /.row-->
+        </div><!--  /.footer-area -->
+    </footer>
+    <!-- End of footer section
+        ============================================= -->
+    <!--  Js Library -->
+    <script src="~/Content/assets/js/jquery-2.1.4.min.js"></script>
+    <!-- Include  for bootstrap -->
+    <script src="~/Content/assets/js/bootstrap.min.js"></script>
+    <!-- Include isotope Js -->
+    <script src="~/Content/assets/js/jquery.isotope.min.js"></script>
+    <!-- Include lightbox -->
+    <script src="~/Content/assets/js/lightbox.js"></script>
+    <!-- Include circle-effect.js -->
+    <script src="~/Content/assets/js/circle-effect.js"></script>
+    <!-- Include Video js -->
+    <script src="~/Content/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Include Owl-carousel -->
+    <script src="~/Content/assets/js/owl.carousel.min.js"></script>
+    <!-- Include Counter up -->
+    <script src="~/Content/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/assets/js/waypoints.min.js"></script>
+
+
+
+    <!-- Include script.js -->
+    <script src="~/Content/assets/js/script.js"></script>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
-</html>

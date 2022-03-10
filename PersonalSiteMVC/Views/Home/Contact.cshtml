@@ -2,16 +2,123 @@
     ViewBag.Title = "Contact";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<section id="contact" class="contact-us-section">
+    <div class="container">
+        <div class="row section-content">
+            <div class="contact-us-contact">
+                <div class="contact-text text-center deep-black play-fair">
+                    <span>
+                        Contact information, and resume in one handy place.
+                    </span>
+                </div>
+                <!-- //.contact-text-->
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+
+                <div class="contact-adress pt90">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="section-title text-capitalize deep-black pb75">
+                                <h2>Contact</h2>
+                            </div>
+                            <!-- //title -->
+                        </div>
+
+
+
+                        <div class="col-sm-3">
+                            <div class="service-text-icon">
+                                <div class="service-icon">
+                                    <span class="deep-black ti-email"></span>
+                                </div>
+                                <!-- //icon -->
+                                <div class="service-text mt15">
+                                    <div class="service-title deep-black">
+                                        <h3>Get In Touch</h3>
+                                    </div>
+                                    <!-- //title -->
+                                    <div class="service-dec mt15">
+                                        <span>
+                                            <a href="mailto: kleealex34@outlook.com"> kleealex34@outlook.com </a>
+                                            <a href="http://alexklee.net/"><br>www.alexklee.net </a>
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- //deccription -->
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="service-text-icon">
+                                <div class="service-icon">
+                                    <span class="deep-black ti-world"></span>
+                                </div>
+                                <!-- //icon -->
+                                <div class="service-text mt15">
+                                    <div class="service-title deep-black">
+                                        <h3>Resume</h3>
+                                    </div>
+                                    <!-- //title -->
+                                    <div class="service-dec mt15">
+                                        <span>
+                                            <a href="resume.pdf" target="_blank">Resume</a>
+
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- //deccription -->
+                            </div>
+                        </div>
+                        <!-- //col-sm-3 -->
+                    </div>
+                </div>
+                <!-- //.contact-adress -->
+
+                <div class="contact-area-form pt90">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="section-title text-capitalize deep-black pb75">
+                                <h2>Drop a Mail</h2>
+                            </div>-->
+                            <!-- //title -->
+                        </div>
+                        <!-- //col-sm-3 -->
+
+                        <br />
+                        <h3 class="text-center">I'm sorry this function is unavailable right now, please come back later!</h3>
+                        <br />
+
+                        <div class="col-sm-9">
+                            <div class="contact-adress-form">
+                                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                                    <div class="contact-info-item">
+                                        <input class="name" name="name" type="text" placeholder="Enter your name...">
+                                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <input class="email" name="email" type="email" placeholder="Your Email">
+                                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <input class="sub" name="name" type="text" placeholder="Subject ( optional )">
+                                        <span class="phone"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    </div>
+                                    <div class="contact-info-msg">
+                                        <textarea id="message" name="message" placeholder="Type your message" rows="7" cols="30"></textarea>
+                                        <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                    </div>
+                                    <button class="text-uppercase" type="submit" value="send now">Send Message<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--//.col-sm-9-->
+                    </div>
+                </div>
+                <!-- //.contact-area-form -->
+            </div>
+            <!-- //.contact-us-contact -->
+        </div><!--  /.row-->
+    </div><!--  /.container -->
+</section>
