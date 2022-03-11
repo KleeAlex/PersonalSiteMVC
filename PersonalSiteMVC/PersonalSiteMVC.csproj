@@ -155,6 +155,7 @@
     <Content Include="Content\assets\img\blog\img2.png" />
     <Content Include="Content\assets\img\blog\img4.png" />
     <Content Include="Content\assets\img\close.png" />
+    <Content Include="Content\assets\img\projects\dungeon.jpg" />
     <Content Include="Content\assets\img\header.jpg" />
     <Content Include="Content\assets\img\loading.gif" />
     <Content Include="Content\assets\img\logo\logo.png" />
@@ -326,6 +327,7 @@
     <Content Include="Content\assets\fonts\themify.woff" />
     <Content Include="Content\resume.pdf" />
     <Content Include="Content\assets\resume.pdf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
