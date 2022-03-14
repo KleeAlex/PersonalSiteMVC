@@ -45,10 +45,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.2.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.2\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.1.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.2.1.5.1\lib\net45\MailKit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MimeKit, Version=2.1.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.2.1.5.1\lib\net45\MimeKit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -124,6 +137,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactViewModel.cs" />
+    <Compile Include="Models\DefaultController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +147,7 @@
     <Content Include="Content\assets\css\menu.css" />
     <Content Include="Content\assets\css\owl.carousel.css" />
     <Content Include="Content\assets\css\responsive.css" />
+    <Content Include="Content\assets\css\resumeStyle.css" />
     <Content Include="Content\assets\css\style.css" />
     <Content Include="Content\assets\css\themify-icons.css" />
     <Content Include="Content\assets\css\video.min.css" />
@@ -155,10 +171,10 @@
     <Content Include="Content\assets\img\blog\img2.png" />
     <Content Include="Content\assets\img\blog\img4.png" />
     <Content Include="Content\assets\img\close.png" />
+    <Content Include="Content\assets\img\logo\icons8-red-panda-48.png" />
     <Content Include="Content\assets\img\projects\dungeon.jpg" />
     <Content Include="Content\assets\img\header.jpg" />
     <Content Include="Content\assets\img\loading.gif" />
-    <Content Include="Content\assets\img\logo\logo.png" />
     <Content Include="Content\assets\img\next.png" />
     <Content Include="Content\assets\img\portfolio\port-1.jpg" />
     <Content Include="Content\assets\img\portfolio\port-10.gif" />
@@ -320,6 +336,7 @@
     <Content Include="_Archive\PersonalSite.sln" />
     <Content Include="_Archive\prev.png" />
     <Content Include="_Archive\projects.html" />
+    <Content Include="_Archive\resume.html" />
     <Content Include="_Archive\teamPage1.html" />
     <Content Include="_Archive\teamPage2.html" />
     <Content Include="Content\assets\fonts\themify.eot" />
@@ -327,6 +344,7 @@
     <Content Include="Content\assets\fonts\themify.woff" />
     <Content Include="Content\resume.pdf" />
     <Content Include="Content\assets\resume.pdf" />
+    <Content Include="Configs\AppSecretKeys.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -339,7 +357,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -359,6 +379,7 @@
     <Content Include="Views\Home\Project.cshtml" />
     <Content Include="Views\Home\TeamPage1.cshtml" />
     <Content Include="Views\Home\TeamPage2.cshtml" />
+    <Content Include="Views\Home\Resume.cshtml" />
     <None Include="_Archive\packages.config" />
     <Content Include="_Archive\resume.pdf" />
     <Content Include="_Archive\Web.config" />
@@ -371,7 +392,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -4,11 +4,14 @@
 <head>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    @RenderSection("scripts", required: false)
+
     <meta charset="utf-8">
     <title>Alex Klee</title>
     <meta name="description" content="Personal Site">
 
-    <meta name="keywords" content="Premium HTML Template">
+    <meta name="keywords" content="Full Stack Dev, Web Dev, Developer, Freelance, Contract">
 
     <meta name="author" content="HTMLmate Alex Klee">
 
@@ -42,7 +45,7 @@
     <nav id="poppin-nav">
         <div id="nav-off"></div>
         <div id="header-logo-1" class="text-center">
-            <a href="#"><img src="~/Content/assets/img//logo/logo.png" alt="img"></a>
+            <a href="#"><img src="~/Content/assets/img/logo/icons8-red-panda-48.png" alt="img"></a>
         </div>
         <ul id="menu">
             <li class="has-submenu text-capitalize">
@@ -57,7 +60,7 @@
             </li>-->
             <li><a href="@Url.Action("Project", "Home")">Projects</a></li>
             <li><a href="@Url.Action("TeamPage1", "Home")">The Team</a></li>
-            <li><a href="~/Content/resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="@Url.Action("Resume", "Home")">Resume</a></li>
             <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
         </ul>
     </nav>
@@ -70,7 +73,7 @@
         <div class="container">
             <div class="row">
                 <div id="header-logo">
-                    <a href="#"><img src="~/Content/assets/img//logo/logo.png" alt="img"></a>
+                    <a href="@Url.Action("Index", "Home")"><img src="~/Content/assets/img/logo/icons8-red-panda-48.png" alt="img"></a>
                 </div>
 
                 <div id="menu-burger" class="pull-right not-stuck">
@@ -138,7 +141,12 @@
                                 <li><a href="https://github.com/KleeAlex" target="_blank"><span class="ti-github"></span></a></li>
                             </ul><!-- /.page-head-social-list -->
                         </div>
-                        <span>© puppin 2018 - Alex Klee @DateTime.Now.Year - All Rights Reserved </span>
+                        <span>
+                            © puppin 2018 - Alex Klee @DateTime.Now.Year
+                            <br />
+                            <a target="_blank" href="https://icons8.com/icon/vjcEOhHbbzpq/red-panda">Red Panda</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                            - All Rights Reserved
+                        </span>
                     </div>
                     <!-- //copy-right-area -->
                 </div><!--  /.container -->
@@ -172,5 +180,6 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @*@RenderSection("scripts", required: false)*@
 </body>
+</html>

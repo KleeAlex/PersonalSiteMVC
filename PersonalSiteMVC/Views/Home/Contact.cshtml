@@ -1,6 +1,11 @@
-﻿@{
+﻿@model PersonalSiteMVC.Models.ContactViewModel
+
+
+@{
     ViewBag.Title = "Contact";
 }
+
+
 <h2>@ViewBag.Title.</h2>
 
 <section id="contact" class="contact-us-section">
@@ -76,47 +81,70 @@
                 </div>
                 <!-- //.contact-adress -->
 
-                <div class="contact-area-form pt90">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="section-title text-capitalize deep-black pb75">
-                                <h2>Drop a Mail</h2>
-                            </div>-->
-                            <!-- //title -->
-                        </div>
-                        <!-- //col-sm-3 -->
 
-                        <br />
-                        <h3 class="text-center">I'm sorry this function is unavailable right now, please come back later!</h3>
-                        <br />
+                @if (ViewBag.CustomerMessage != null)
+                {
+                    <div>
+                        @Html.Raw(ViewBag.CustomerMessage)
+                    </div>
+                }
 
-                        <div class="col-sm-9">
-                            <div class="contact-adress-form">
-                                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                                    <div class="contact-info-item">
-                                        <input class="name" name="name" type="text" placeholder="Enter your name...">
-                                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div class="contact-info-item">
-                                        <input class="email" name="email" type="email" placeholder="Your Email">
-                                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div class="contact-info-item">
-                                        <input class="sub" name="name" type="text" placeholder="Subject ( optional )">
-                                        <span class="phone"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div class="contact-info-msg">
-                                        <textarea id="message" name="message" placeholder="Type your message" rows="7" cols="30"></textarea>
-                                        <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                                    </div>
-                                    <button class="text-uppercase" type="submit" value="send now">Send Message<i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                                </form>
+                @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <h4>ContactViewModel</h4>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
                             </div>
                         </div>
-                        <!--//.col-sm-9-->
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Create" class="btn btn-default" />
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- //.contact-area-form -->
+                }
+
+                @*<div>
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>*@
+
+                @section Scripts {
+                    @Scripts.Render("~/bundles/jqueryval")
+                }
+
             </div>
             <!-- //.contact-us-contact -->
         </div><!--  /.row-->
