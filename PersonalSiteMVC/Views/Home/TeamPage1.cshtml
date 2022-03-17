@@ -3,12 +3,11 @@
     ViewBag.Title = "Team Page";
 }
 
-<h2>@ViewBag.Title</h2>
 
 <section id="blog-main" class="blog-main-section">
     <div class="container">
-        <div class="row section-content">
-            <div class="blog-main-content">
+        <div class="row section-content blog-main-content">
+           
 
 
                 <div class="blog-main-text-pic col-md-12">
@@ -178,7 +177,6 @@
                                 <h2><a href="http://www.kaylawin.com/">Kayla Nguyen</a></h2>
                             </div>
                         </div>
-                        <!-- // .blog-main-text -->
                     </div>
                 </div>
                 <!-- //.blog-main-text-pic -->
@@ -204,7 +202,8 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- testing this weird bug
+                   -->
 
                 <div class="blog-main-text-pic col-md-12">
                     <div class="blog-item-content">
@@ -229,18 +228,14 @@
                 </div>
                 <!-- //.blog-main-text-pic -->
 
-            </div>
-            <!-- // .blog-main-content -->
-
-        @* TODO need to wrap the below in a section and show it on the  layout (do same with page 2) *@
-
-            <div class="blog-pagination text-center">
-                <ul class="pagination">
-                    <li><a href="@Url.Action("TeamPage1", "Home")">1</a></li>
-                    <li><a href="@Url.Action("TeamPage2", "Home")">2</a></li>
-                    <li><a href="@Url.Action("TeamPage2", "Home")"><span class="ti-arrow-right"></span></a></li>
-                </ul>
-            </div>
         </div><!--  /.row -->
+                <div class="blog-pagination text-center">
+                    <ul class="pagination">
+                        <li><a href="@Url.Action("TeamPage1", "Home")">1</a></li>
+                        <li><a href="@Url.Action("TeamPage2", "Home")">2</a></li>
+                        <li><a href="@Url.Action("TeamPage2", "Home")"><span class="ti-arrow-right"></span></a></li>
+                    </ul>
+                </div>
+        
     </div><!--  /.container-->
 </section>

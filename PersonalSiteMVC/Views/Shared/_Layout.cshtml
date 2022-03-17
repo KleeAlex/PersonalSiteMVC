@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="~/Content/assets/css/responsive.css">
 </head>
 
-\]
+
 <body>
     <div id="preloader"></div>
     <!-- Start of nav bar
@@ -127,7 +127,16 @@
             </div>
         </div>
     </section>
+
+
+
+
     @RenderBody()
+
+
+
+
+
     <footer>
         <div class="footer-area footer-2">
             <div class="container">
@@ -180,6 +189,6 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @*@RenderSection("scripts", required: false)*@
+    @RenderSection("section", required: false)
 </body>
 </html>
