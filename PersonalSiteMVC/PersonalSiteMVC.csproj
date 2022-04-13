@@ -172,6 +172,8 @@
     <Content Include="Content\assets\img\blog\img4.png" />
     <Content Include="Content\assets\img\close.png" />
     <Content Include="Content\assets\img\logo\icons8-red-panda-48.png" />
+    <Content Include="Content\assets\img\Me.jpg" />
+    <Content Include="Content\assets\img\projects\dreamwares.png" />
     <Content Include="Content\assets\img\projects\dungeon.jpg" />
     <Content Include="Content\assets\img\header.jpg" />
     <Content Include="Content\assets\img\loading.gif" />
@@ -197,6 +199,7 @@
     <Content Include="Content\assets\img\preloader.gif" />
     <Content Include="Content\assets\img\prev.png" />
     <Content Include="Content\assets\img\projects\fed1.jpg" />
+    <Content Include="Content\assets\img\projects\api.png" />
     <Content Include="Content\assets\img\recent-blog\recent-1.jpg" />
     <Content Include="Content\assets\img\recent-blog\recent-2.jpg" />
     <Content Include="Content\assets\img\recent-blog\recent-3.jpg" />
