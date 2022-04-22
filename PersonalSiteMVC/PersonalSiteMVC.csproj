@@ -200,6 +200,7 @@
     <Content Include="Content\assets\img\prev.png" />
     <Content Include="Content\assets\img\projects\fed1.jpg" />
     <Content Include="Content\assets\img\projects\api.png" />
+    <Content Include="Content\assets\img\projects\pairedprogram.jpg" />
     <Content Include="Content\assets\img\recent-blog\recent-1.jpg" />
     <Content Include="Content\assets\img\recent-blog\recent-2.jpg" />
     <Content Include="Content\assets\img\recent-blog\recent-3.jpg" />
